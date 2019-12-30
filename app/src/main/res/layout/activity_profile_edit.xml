@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+
+    tools:context=".ProfileEditActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start"
+            android:weightSum="4">
+
+
+            <ImageView
+                android:id="@+id/noId"
+                android:layout_width="20dp"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/no"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#030303"
+                android:textSize="23sp"
+                android:layout_weight="4"
+                android:layout_margin="10dp"
+                android:textAlignment="center"
+                />
+
+            <ImageView
+                android:id="@+id/yesId"
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/yes"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/name"/>
+            <TextView
+                android:id="@+id/label_name"
+                android:text="@string/profile_creator_form_name"
+                android:textSize="22sp"
+                android:layout_margin="8dp"
+                android:textColor="#050505"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/input_names"
+            android:layout_marginLeft="43dp"
+            android:textSize="18sp"
+            android:textColor="#454444"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/job"/>
+
+            <TextView
+                android:id="@+id/label_job_title"
+                android:text="@string/profile_creator_form_job_title"
+                android:textSize="22sp"
+                android:layout_margin="8dp"
+                android:textColor="#050505"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/input_job_titles"
+            android:layout_marginLeft="43dp"
+            android:textSize="18sp"
+            android:textColor="#454444"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/company"/>
+
+            <TextView
+                android:id="@+id/label_company"
+                android:text="@string/profile_creator_form_company"
+                android:textSize="22sp"
+                android:layout_margin="8dp"
+                android:textColor="#050505"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/input_companys"
+            android:layout_marginLeft="43dp"
+            android:textSize="18sp"
+            android:textColor="#454444"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/telephone"/>
+
+            <TextView
+                android:id="@+id/label_telephone"
+                android:text="@string/profile_creator_form_telephone"
+                android:textSize="22sp"
+                android:layout_margin="8dp"
+                android:textColor="#050505"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/input_telephones"
+            android:layout_marginLeft="43dp"
+            android:inputType="phone"
+            android:textSize="18sp"
+            android:textColor="#454444"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/mobile"/>
+
+            <TextView
+                android:id="@+id/label_cell"
+                android:text="@string/profile_creator_form_cell"
+                android:textSize="22sp"
+                android:layout_margin="8dp"
+                android:textColor="#050505"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/input_cells"
+            android:layout_marginLeft="43dp"
+            android:inputType="phone"
+            android:textSize="18sp"
+            android:textColor="#454444"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/email"/>
+
+            <TextView
+                android:id="@+id/label_email"
+                android:text="@string/profile_creator_form_email"
+                android:textSize="22sp"
+                android:layout_margin="8dp"
+                android:textColor="#050505"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/input_emails"
+            android:layout_marginLeft="43dp"
+            android:inputType="textEmailAddress"
+            android:textSize="18sp"
+            android:textColor="#454444"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/website"/>
+
+            <TextView
+                android:id="@+id/label_website"
+                android:text="@string/profile_creator_form_website"
+                android:textSize="22sp"
+                android:layout_margin="8dp"
+                android:textColor="#050505"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/input_websites"
+            android:layout_marginLeft="43dp"
+            android:textSize="18sp"
+            android:textColor="#454444"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/fax"/>
+
+            <TextView
+                android:id="@+id/label_fax"
+                android:text="@string/profile_creator_form_fax"
+                android:textSize="22sp"
+                android:layout_margin="8dp"
+                android:textColor="#050505"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/input_faxs"
+            android:layout_marginLeft="43dp"
+            android:inputType="phone"
+            android:textSize="18sp"
+            android:textColor="#454444"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/address"/>
+
+            <TextView
+                android:id="@+id/label_address"
+                android:text="@string/profile_creator_form_address"
+                android:textSize="22sp"
+                android:layout_margin="8dp"
+                android:textColor="#050505"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/input_addresss"
+            android:layout_marginLeft="43dp"
+            android:layout_marginBottom="15dp"
+            android:textSize="18sp"
+            android:textColor="#454444"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>
